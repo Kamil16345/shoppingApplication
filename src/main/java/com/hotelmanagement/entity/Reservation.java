@@ -13,7 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="reservations")
+@Table(name="reservation")
 public class Reservation {
     @jakarta.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

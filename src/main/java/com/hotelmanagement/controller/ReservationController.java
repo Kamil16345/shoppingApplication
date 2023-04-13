@@ -1,15 +1,19 @@
 package com.hotelmanagement.controller;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.hotelmanagement.entity.Reservation;
+import com.hotelmanagement.entity.Room;
 import com.hotelmanagement.repository.ReservationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 
 @RestController
 @RequestMapping("/reservations")
 public class ReservationController {
+    public String fieldName;
     @Autowired
     ReservationRepository reservationRepository;
     @GetMapping("")
@@ -17,7 +21,19 @@ public class ReservationController {
     @GetMapping("/{id}")
     public Reservation getById(@PathVariable("id")int id){return reservationRepository.getById(id);}
     @PostMapping("")
-    public int add(@RequestBody List<Reservation>reservations){return reservationRepository.save(reservations);}
+    public int add(@RequestBody List<Reservation>reservations){
+        //System.out.println(reservations);
+        for (Reservation reservation: reservations){
+            if(reservationRepository.isRoomAvailableForBooking(reservation.getHotel_id(), reservation.getRoom_id(), reservation.getStart_date(), reservation.getEnd_date())){
+                System.out.println("Date available!");
+                return reservationRepository.save(reservations);
+            }else{
+                return -1;
+            }
+        }
+
+        return -1;
+    }
     @PutMapping("/{id}")
     public int update(@PathVariable("id")int id, @RequestBody Reservation updatedReservation){
         Reservation reservation = reservationRepository.getById(id);
@@ -27,7 +43,6 @@ public class ReservationController {
             reservation.setUser_id(updatedReservation.getUser_id());
             reservation.setHotel_id(updatedReservation.getRoom_id());
             reservation.setRoom_id(updatedReservation.getRoom_id());
-
             reservationRepository.update(reservation);
             return 1;
         }else{
