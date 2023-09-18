@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99602169-300b-4173-832b-d449e84512c3" name="Changes" comment="Almost finished implementing inventory- service. During startup error occurs related to constructor arguments.">
+    <list default="true" id="99602169-300b-4173-832b-d449e84512c3" name="Changes" comment="Fixed problem related to inventory-service, now it creates entities in DB at the beginning.">
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/shoppingApplication/inventoryservice/dto/InventoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/config/WebClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/dto/InventoryResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/shoppingApplication/inventoryservice/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/shoppingApplication/inventoryservice/controller/InventoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/shoppingApplication/inventoryservice/repository/InventoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/shoppingApplication/inventoryservice/repository/InventoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/shoppingApplication/inventoryservice/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/shoppingApplication/inventoryservice/service/InventoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +89,9 @@
       <recent name="com.shoppingApplication.orderservice.dto" />
       <recent name="com.shoppingApplication.orderservice.model" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shoppingApplication.orderservice.dto" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.inventory-service">
     <configuration name="inventory-service" type="Application" factoryName="Application">
@@ -152,12 +161,20 @@
       <option name="project" value="LOCAL" />
       <updated>1694795057409</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed problem related to inventory-service, now it creates entities in DB at the beginning.">
+      <created>1694796785383</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694796785383</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finally fixed project structure - previously services weren't added as modules to project - that caused complications during wokrking with entities." />
     <MESSAGE value="Almost finished implementing inventory- service. During startup error occurs related to constructor arguments." />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost finished implementing inventory- service. During startup error occurs related to constructor arguments." />
+    <MESSAGE value="Fixed problem related to inventory-service, now it creates entities in DB at the beginning." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed problem related to inventory-service, now it creates entities in DB at the beginning." />
   </component>
 </project>
