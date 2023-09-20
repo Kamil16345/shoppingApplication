@@ -4,39 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a606e96d-1b08-4c3a-981a-a11c90490dd4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/discovery-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/java/com/shoppingApplication/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-server/src/test/java/com/shoppingApplication/discoveryserver/DiscoveryServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="a606e96d-1b08-4c3a-981a-a11c90490dd4" name="Changes" comment="Changed once again project structure - now every microvervice is created as a module of an application.&#10;Additionally created discovery-server for maintaining oddresses of instances.">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/java/com/shoppingApplication/discoveryserver/DiscoveryServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/java/com/shoppingApplication/discoveryserver/DiscoveryServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery-server/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/OrderServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +29,19 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2VcbjI5eVCIDt3tmWjhzhVKG4wE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -62,17 +49,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "last_opened_file_path": "C:/Users/kamil/OneDrive/Dokumenty/programming/Java/shoppingApplication/inventory-service",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kamil/OneDrive/Dokumenty/programming/Java/shoppingApplication/inventory-service&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kamil\OneDrive\Dokumenty\programming\Java\shoppingApplication\inventory-service" />
@@ -82,7 +69,21 @@
       <recent name="C:\Users\kamil\OneDrive\Dokumenty\programming\Java\shoppingApplication\product-service\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.order-service">
+  <component name="RunManager" selected="Application.inventory-service">
+    <configuration name="discovery-server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.shoppingApplication.discoveryserver.DiscoveryServerApplication" />
+      <module name="discovery-server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="inventory-service" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="com.shoppingApplication.inventoryservice.InventoryServiceApplication" />
+      <module name="inventory-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="order-service" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.shoppingApplication.orderservice.OrderServiceApplication" />
       <module name="order-service" />
@@ -98,8 +99,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.product-service" />
+      <item itemvalue="Application.discovery-server" />
+      <item itemvalue="Application.inventory-service" />
       <item itemvalue="Application.order-service" />
+      <item itemvalue="Application.product-service" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -111,6 +114,18 @@
       <option name="presentableId" value="Default" />
       <updated>1695138448575</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changed once again project structure - now every microvervice is created as a module of an application.&#10;Additionally created discovery-server for maintaining oddresses of instances.">
+      <created>1695145658838</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695145658838</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed once again project structure - now every microvervice is created as a module of an application.&#10;Additionally created discovery-server for maintaining oddresses of instances." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed once again project structure - now every microvervice is created as a module of an application.&#10;Additionally created discovery-server for maintaining oddresses of instances." />
   </component>
 </project>
