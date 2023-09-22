@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a606e96d-1b08-4c3a-981a-a11c90490dd4" name="Changes" comment="Updated readme file">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="a606e96d-1b08-4c3a-981a-a11c90490dd4" name="Changes" comment="Implemented api-gateway for product, order and discovery services">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/shoppingApplication/apigateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/shoppingApplication/apigateway/ApiGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +184,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1695138448575</updated>
-      <workItem from="1695395709529" duration="3358000" />
+      <workItem from="1695395709529" duration="3933000" />
     </task>
     <task id="LOCAL-00001" summary="Changed once again project structure - now every microvervice is created as a module of an application.&#10;Additionally created discovery-server for maintaining oddresses of instances.">
       <created>1695145658838</created>
@@ -211,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695231607736</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implemented api-gateway for product, order and discovery services">
+      <created>1695399517395</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695399517395</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +236,7 @@
     <MESSAGE value="Changed once again project structure - now every microvervice is created as a module of an application.&#10;Additionally created discovery-server for maintaining oddresses of instances." />
     <MESSAGE value="Implemented loadbalancer to handle multiple queries" />
     <MESSAGE value="Updated readme file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated readme file" />
+    <MESSAGE value="Implemented api-gateway for product, order and discovery services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented api-gateway for product, order and discovery services" />
   </component>
 </project>
