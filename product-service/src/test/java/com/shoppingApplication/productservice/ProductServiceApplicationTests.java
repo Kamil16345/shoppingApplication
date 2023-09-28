@@ -1,6 +1,5 @@
 package com.shoppingApplication.productservice;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mongodb.assertions.Assertions;
 import com.shoppingApplication.productservice.dto.ProductRequest;
@@ -44,8 +43,8 @@ class ProductServiceApplicationTests {
 		ProductRequest productRequest = getProductRequest();
 		String productRequestString = objectMapper.writeValueAsString(productRequest);
 		mockMvc.perform(MockMvcRequestBuilders.post("/api/product")
-						.contentType(MediaType.APPLICATION_JSON)
-						.content(productRequestString))
+				.contentType(MediaType.APPLICATION_JSON)
+				.content(productRequestString))
 				.andExpect(MockMvcResultMatchers.status().isCreated());
 		Assertions.assertTrue(productRepository.findAll().size() == 1);
 	}
