@@ -1,6 +1,7 @@
 package com.shoppingApplication.orderservice.controller;
 
 import com.shoppingApplication.orderservice.dto.OrderRequest;
+import com.shoppingApplication.orderservice.model.Order;
 import com.shoppingApplication.orderservice.service.OrderService;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
@@ -9,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 @RestController
@@ -26,5 +28,9 @@ public class OrderController {
     }
     public CompletableFuture<String> fallbackMethod(OrderRequest orderRequest, RuntimeException runtimeException){
         return CompletableFuture.supplyAsync(()->"Something went wrong, please contact your administrator");
+    }
+    @GetMapping
+    public List<Order> getOrders(){
+        return orderService.getAllOrders();
     }
 }

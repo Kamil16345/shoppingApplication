@@ -14,7 +14,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
-import java.util.stream.Stream;
 
 @Service
 @RequiredArgsConstructor
@@ -47,7 +46,9 @@ public class OrderService {
         }
         //Call inventory service, place order if product is in stock
     }
-
+    public List<Order> getAllOrders(){
+        return orderRepository.findAll();
+    }
     private OrderLineItems mapToDto(OrderLineItemsDto orderLineItemsDto) {
         OrderLineItems orderLineItems = new OrderLineItems();
         orderLineItems.setPrice(orderLineItems.getPrice());

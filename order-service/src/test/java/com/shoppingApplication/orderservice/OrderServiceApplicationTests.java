@@ -1,5 +1,6 @@
 package com.shoppingApplication.orderservice;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.shoppingApplication.orderservice.dto.OrderLineItemsDto;
 import com.shoppingApplication.orderservice.dto.OrderRequest;
@@ -55,15 +56,23 @@ class OrderServiceApplicationTests {
 	@Test
 	public void shouldPlaceOrder() throws Exception {
 		OrderRequest orderLineItemsDto = getOrderRequest();
-		String productRequestString = objectMapper.writeValueAsString(orderLineItemsDto);
+		String orderRequestString = objectMapper.writeValueAsString(orderLineItemsDto);
 		mockMvc.perform(MockMvcRequestBuilders.post("/api/order")
 				.contentType(MediaType.APPLICATION_JSON)
-				.content(productRequestString))
+				.content(orderRequestString))
 				.andExpect(MockMvcResultMatchers.status().isCreated());
+	}
+	@Test
+	public void shouldGetAllOrders() throws Exception {
+		OrderRequest orderRequest = getOrderRequest();
+		String orderRequestString = objectMapper.writeValueAsString(orderRequest);
+		mockMvc.perform(MockMvcRequestBuilders.get("/api/order")
+				.contentType(MediaType.APPLICATION_JSON)
+				.content(orderRequestString))
+				.andExpect(MockMvcResultMatchers.status().isOk());
 	}
 	public OrderRequest getOrderRequest(){
 		OrderLineItemsDto orderLineItems = new OrderLineItemsDto("123-123", BigDecimal.valueOf(22), 3);
-//		List<OrderLineItemsDto> orderLineItemsDtoList = null;
 		List<OrderLineItemsDto> orderLineItemsDtoList = new ArrayList<>();
 		orderLineItemsDtoList.add(orderLineItems);
 		return OrderRequest.builder()

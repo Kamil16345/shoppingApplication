@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a606e96d-1b08-4c3a-981a-a11c90490dd4" name="Changes" comment="Written test for order-service.">
-      <change afterPath="$PROJECT_DIR$/order-service/src/test/resources/application.properties" afterDir="false" />
+    <list default="true" id="a606e96d-1b08-4c3a-981a-a11c90490dd4" name="Changes" comment="Refactored test for posting an order.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/dto/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/dto/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/shoppingApplication/orderservice/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/test/java/com/shoppingApplication/orderservice/OrderServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/test/java/com/shoppingApplication/orderservice/OrderServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/test/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderServiceApplicationTests">
+  <component name="RunManager" selected="JUnit.OrderServiceApplicationTests.shouldGetAllOrders">
     <configuration name="api-gateway" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.shoppingApplication.apigateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -153,6 +152,22 @@
       <option name="PACKAGE_NAME" value="com.shoppingApplication.orderservice" />
       <option name="MAIN_CLASS_NAME" value="com.shoppingApplication.orderservice.OrderServiceApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplicationTests.shouldGetAllOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="order-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shoppingApplication.orderservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.shoppingApplication.orderservice" />
+      <option name="MAIN_CLASS_NAME" value="com.shoppingApplication.orderservice.OrderServiceApplicationTests" />
+      <option name="METHOD_NAME" value="shouldGetAllOrders" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -245,6 +260,7 @@
       <item itemvalue="Application.inventory-service" />
       <item itemvalue="Application.order-service" />
       <item itemvalue="Application.product-service" />
+      <item itemvalue="JUnit.OrderServiceApplicationTests.shouldGetAllOrders" />
       <item itemvalue="JUnit.OrderServiceApplicationTests" />
       <item itemvalue="JUnit.OrderServiceApplicationTests.shouldPlaceOrder" />
       <item itemvalue="JUnit.ProductServiceApplicationTests" />
@@ -257,6 +273,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderServiceApplicationTests.shouldGetAllOrders" />
         <item itemvalue="JUnit.OrderServiceApplicationTests" />
         <item itemvalue="JUnit.OrderServiceApplicationTests.shouldPlaceOrder" />
         <item itemvalue="JUnit.ProductServiceApplicationTests" />
@@ -279,7 +296,9 @@
       <workItem from="1695917588046" duration="3004000" />
       <workItem from="1695920656929" duration="12483000" />
       <workItem from="1695935818269" duration="1928000" />
-      <workItem from="1696012669775" duration="7565000" />
+      <workItem from="1696012669775" duration="8063000" />
+      <workItem from="1696343580445" duration="298000" />
+      <workItem from="1696367179979" duration="1378000" />
     </task>
     <task id="LOCAL-00001" summary="Changed once again project structure - now every microvervice is created as a module of an application.&#10;Additionally created discovery-server for maintaining oddresses of instances.">
       <created>1695145658838</created>
@@ -351,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695931681543</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactored test for posting an order.">
+      <created>1696027492615</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696027492615</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,6 +407,7 @@
     <MESSAGE value="Created dockerfile for api-gateway." />
     <MESSAGE value="Upadted README file" />
     <MESSAGE value="Written test for order-service." />
-    <option name="LAST_COMMIT_MESSAGE" value="Written test for order-service." />
+    <MESSAGE value="Refactored test for posting an order." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored test for posting an order." />
   </component>
 </project>
