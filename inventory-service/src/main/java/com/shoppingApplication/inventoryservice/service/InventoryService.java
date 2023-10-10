@@ -11,8 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-import static java.util.stream.Collectors.toList;
-
 @Service
 @RequiredArgsConstructor
 @Slf4j
@@ -27,5 +25,8 @@ public class InventoryService {
                             .isInStock(inventory.getQuantity()>0)
                             .build()
                 ).toList();
+    }
+    public List<Inventory> addToInventory(List<Inventory> products){
+        return products;
     }
 }
